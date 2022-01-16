@@ -1,0 +1,5 @@
+version: '3'
+services:
+  sample:
+    environment:
+      - TMP_VALUE=100

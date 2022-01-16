@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sample:
+    image: ubuntu:latest
+    environment:
+      - TMP_VALUE=1
+      - TMP_VALUE2=2
+    volumes:
+      - ./start.sh:/start.sh
+    entrypoint: sh /start.sh
